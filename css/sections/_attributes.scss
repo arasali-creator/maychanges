@@ -1,0 +1,175 @@
+.attributes {
+  margin: -138px 0 0 0;
+  padding: 238px 0 110px;
+  background-color: $color-bg;
+
+  .container {
+    flex-direction: column;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    margin: 0 0 80px;
+
+    .title {
+      flex-shrink: 0;
+      width: 250px;
+      height: 100px;
+      margin: 0 55px 0 0;
+      padding: 0 10px 0 0;
+      font-size: 40px;
+      line-height: 50px;
+      font-weight: 600;
+      color: $color-title;
+      border-right: 2px solid #E3E3E3;
+
+      span {
+        font-weight: 800;
+        color: $color-accent;
+      }
+    }
+
+    .desc {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $color-text;
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .card {
+    position: relative;
+    top: 0;
+    width: 360px;
+    height: 193px;
+    padding: 31px 31px 5px;
+    background-color: $color-white;
+    box-shadow: 0 15px 30px rgba(32, 44, 51, 0.1);
+    border-radius: 7px;
+    transition: all .2s;
+
+    &.active {
+      animation: 1s move-to-top;
+      opacity: 1;
+    }
+
+    &:hover {
+      top: -7px;
+    }
+
+    &:not(:last-of-type) {
+      margin: 0 30px 30px 0;
+    }
+
+    &.third {
+      margin: 0 0 30px;
+    }
+
+    .title {
+      position: relative;
+      display: inline-block;
+      margin: 0 0 20px;
+      font-size: 40px;
+      line-height: 28px;
+      font-weight: 700;
+      color: $color-accent;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: -55px;
+        width: 31px;
+        height: 2px;
+        border-radius: 3px;
+        background-color: $color-accent;
+      }
+    }
+
+    .desc {
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-text;
+    }
+  }
+
+  @media (min-width: 1201px) {
+    .card {
+      opacity: 0;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1200px) {
+    margin: -100px 0 0 0;
+    padding: 180px 0 80px;
+
+    .card {
+      width: 230px;
+      padding: 20px 23px 5px;
+
+      &:not(:last-of-type) {
+        margin: 0 20px 30px 0;
+      }
+
+      &.third {
+        margin: 0 0 30px;
+      }
+
+      .title {
+        margin: 0 0 15px;
+        font-size: 30px;
+        line-height: 22px;
+      }
+
+      .desc {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+
+    .top .desc {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin: -165px 0 0 0;
+    padding: 238px 0 70px;
+
+    .top {
+      flex-direction: column;
+      width: 95%;
+      margin: 0 0 45px;
+      padding: 0 15px;
+
+      .title {
+        margin: 0 0 20px;
+        padding: 0;
+        border-right: none;
+        font-size: 35px;
+        line-height: 45px;
+        text-align: center;
+      }
+    }
+
+    .card {
+      width: 345px;
+      margin: 0 0 20px;
+      padding: 27px 27px 5px;
+
+      &.third, &:not(:last-of-type) {
+        margin: 0 0 20px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,151 @@
+.modal {
+
+  width: 970px;
+  max-width: 970px;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+
+  a.close-modal.icon-remove {
+    top: 11px;
+    right: 11px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../img/icons/close.svg");
+  }
+
+  .top-part {
+    position: relative;
+    height: 128px;
+    margin: 0 0 98px;
+    padding: 51px 50px 0;
+    background-color: #fafafa;
+  }
+
+  .photo {
+    position: absolute;
+    top: 51px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 154px;
+    height: 154px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(32, 44, 51, 0.1);
+    border-radius: 10px;
+
+    img {
+      width: auto;
+      height: 154px;
+      max-height: 154px;
+    }
+  }
+
+  .name {
+    margin: 0 0 0 180px;
+    font-size: 35px;
+    font-weight: 700;
+    color: $color-title;
+    line-height: 40px;
+  }
+
+  .position {
+    margin: 5px 0 0 180px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-accent;
+    line-height: 19px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    margin: 60px 0 0 180px;
+    background-color: $color-accent;
+    border-radius: 5px;
+
+    img {
+      height: 18px;
+    }
+  }
+
+  .content {
+    padding: 0 50px 50px;
+    background-color: $color-white;
+  }
+
+  .desc {
+    &-short {
+      margin: 0 0 20px;
+      font-size: 16px;
+      font-weight: 500;
+      color: $color-title;
+      line-height: 19px;
+    }
+    &-long {
+      font-size: 14px;
+      font-weight: 500;
+      color: $color-text;
+      line-height: 21px;
+
+      p {
+        margin: 20px 0 0 0;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    width: 700px;
+
+    .desc {
+      &-short {
+        font-size: 15px;
+        line-height: 18px;
+      }
+      &-long {
+        font-size: 13px;
+
+        p {
+          margin: 15px 0 0 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 35px 0 0 0;
+
+    .top-part {
+      margin: 0 0 80px;
+      padding: 30px 20px 0;
+    }
+
+    .content {
+      padding: 0 20px 30px;
+    }
+
+    .photo {
+      top: 30px;
+      left: 20px;
+    }
+
+    .name {
+      margin: 0 0 0 174px;
+      font-size: 23px;
+      line-height: 30px;
+    }
+
+    .position {
+      font-size: 17px;
+    }
+
+    .link {
+      margin: 55px 0 0 175px;
+    }
+  }
+}
