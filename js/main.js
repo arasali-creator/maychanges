@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
     const navMobBtn = jQuery("#nav-mobile-btn");
 
     const infoPeople = [{
-            photo: "../../img/photos/juless.jpg",
+            photo: "/img/photos/juless.jpg",
             name: "Jules Brenner",
             link: "https://www.linkedin.com/in/jules-brenner/",
             position: "Founder",
