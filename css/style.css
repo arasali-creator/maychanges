@@ -100,6 +100,7 @@ input {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: local("MontserratRegular"), local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.ttf") format("ttf");
     src: url("../fonts/Montserrat-Regular.woff") format("woff");
 }
@@ -108,6 +109,7 @@ input {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
+    font-display: swap;
     src: local("MontserratMedium"), local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.ttf") format("ttf");
     src: url("../fonts/Montserrat-Medium.woff") format("woff");
 }
@@ -116,6 +118,7 @@ input {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
+    font-display: swap;
     src: local("MontserratSemiBold"), local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.ttf") format("ttf");
     src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
 }
@@ -124,6 +127,7 @@ input {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
+    font-display: swap;
     src: local("MontserratBold"), local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.ttf") format("ttf");
     src: url("../fonts/Montserrat-Bold.woff") format("woff");
 }
@@ -132,6 +136,7 @@ input {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
+    font-display: swap;
     src: local("MontserratExtraBold"), local("Montserrat-ExtraBold"), url("../fonts/Montserrat-ExtraBold.ttf") format("ttf");
     src: url("../fonts/Montserrat-ExtraBold.woff") format("woff");
 }
@@ -747,7 +752,7 @@ a.main-btn {
 
 .main {
     height: 774px;
-    background: url("../img/work.png") center no-repeat;
+    background: url("../img/work.webp") center no-repeat;
     background-size: cover;
 }
 
@@ -949,7 +954,7 @@ a.main-btn {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: url("../img/poster.png") center no-repeat;
+    background: url("../img/poster.webp") center no-repeat;
     background-size: cover;
     cursor: pointer;
 }
